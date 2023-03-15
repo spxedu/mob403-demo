@@ -7,4 +7,10 @@ Phiên bản hiện tại là 2.10.x
   implementation 'com.google.code.gson:gson:2.10.1'
 ```
 ### Bước 2: Tạo một lớp DTO để tương tác
-
+Tạo lớp java:  User.java
+```java
+public class User {
+    public int id;
+    public String name;
+}
+```
