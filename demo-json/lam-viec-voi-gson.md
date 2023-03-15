@@ -15,7 +15,7 @@ public class User {
 }
 ```
 ### Bước 3: Trong code activity, tạo đối tượng GSON và đối tượng User để chuyển đổi
-```
+```java
  //1. Chuyển đối tượng java thành chuỗi JSON
         User objU = new User();
         objU.id = 11;
