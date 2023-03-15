@@ -14,3 +14,14 @@ public class User {
     public String name;
 }
 ```
+### Bước 3: Trong code activity, tạo đối tượng GSON và đối tượng User để chuyển đổi
+```
+ //1. Chuyển đối tượng java thành chuỗi JSON
+        User objU = new User();
+        objU.id = 11;
+        objU.name = "Nguyễn Văn A";
+        // tạo đối tượng Gson
+        Gson gson = new Gson();
+        String chuoi_json = gson.toJson(objU );
+        Log.d(TAG, "onCreate: Chuỗi json = " + chuoi_json);
+```
