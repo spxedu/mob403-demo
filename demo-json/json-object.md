@@ -16,3 +16,19 @@ String chuoi_json = "{\"id\":1, \"name\":\"Dien thoai\", \"price\":12000 }";
 ```
         
         
+## Làm việc với mảng json
+```
+String mang_json = "[{\"id\":1, \"name\":\"Dien thoai\", \"price\":12000 }, {\"id\":2, \"name\":\"May tinh\", \"price\":111111 } ]" ;
+
+        try {
+            JSONArray arr = new JSONArray(mang_json);
+            for(int i = 0; i<arr.length(); i++){
+                JSONObject obj = arr.getJSONObject(i);
+                Log.d(TAG, "onCreate: i = " + i + "---name " + obj.get("name"));
+                Log.d(TAG, "onCreate: Chuyển obj về chuỗi: " + obj.toString() );
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+ ```
